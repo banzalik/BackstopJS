@@ -1129,3 +1129,9 @@ BackstopJS was created and is maintained by [Garris Shipon](https://www.linkedin
 - [Benedikt Rötsch](https://github.com/axe312ger) for help on the 0.6.0 release
 - [Yulia Tsareva](https://github.com/YuliaTsareva) for help on the 0.5.0 release -- windows support
 - [Lewis Nyman](https://github.com/lewisnyman) and [Stoutie](https://github.com/jehoshua02) for help with 0.4.0 release -- you guys are responsible for really getting the ball rolling!
+
+# Sponsors
+
+Thanks for [Browserstack](https://browserstack.com/) to provide us with a free account for automated tests.
+
+[<img src="https://raw.githubusercontent.com/banzalik/BackstopJS/master/assets/browserstack-logo.png">](https://www.browserstack.com)

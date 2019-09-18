@@ -6,6 +6,7 @@ var pMap = require('p-map');
 
 var runChromy = require('./runChromy');
 var runPuppet = require('./runPuppet');
+var runBrowserstack = require('./runBrowserstack');
 
 const ensureDirectoryPath = require('./ensureDirectoryPath');
 var logger = require('./logger')('createBitmaps');
@@ -143,6 +144,8 @@ function delegateScenarios (config) {
     });
   } else if (config.engine.startsWith('puppet')) {
     return pMap(scenarioViews, runPuppet, { concurrency: asyncCaptureLimit });
+  } else if (config.engine.startsWith('browserstack')) {
+    return pMap(scenarioViews, runBrowserstack, { concurrency: asyncCaptureLimit });
   } else {
     logger.error(`Engine "${(typeof config.engine === 'string' && config.engine) || 'undefined'}" not recognized! If you require PhantomJS or Slimer support please use backstopjs@3.8.8 or earlier.`);
   }
